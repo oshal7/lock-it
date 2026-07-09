@@ -1,0 +1,28 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/captures/
+.externalNativeBuildFolder
+.cxx/
+local.properties
+
+# Keystore + secrets — never commit these. CI regenerates keystore.properties from
+# GitHub Secrets at build time; RELEASE_KEYSTORE.b64 is decoded to *.jks/*.keystore.
+keystore.properties
+*.jks
+*.keystore
+
+# Your personal trigger-phrase model (from Picovoice Console) is imported into the app at
+# runtime via a file picker, not bundled into the APK — nothing to ignore here, but if you keep
+# a local copy for backup, don't commit it.
+*.ppn
+
+app/build/
+build/
+out/
+
+*.hprof
+.kotlin/

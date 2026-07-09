@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VoiceLock</string>
+    <string name="accessibility_service_description">Lets VoiceLock detect when the phone has just been unlocked so it can show the VoiceLock gate before anything else becomes visible.</string>
+
+    <!-- Notification -->
+    <string name="listening_notification_title">VoiceLock is listening</string>
+    <string name="listening_notification_text">Say your trigger phrase to lock the phone instantly.</string>
+    <string name="listening_notification_paused_text">Paused during a phone call.</string>
+    <string name="listening_channel_name">VoiceLock service</string>
+
+    <!-- Onboarding: Welcome -->
+    <string name="onboarding_welcome_title">Welcome to VoiceLock</string>
+    <string name="onboarding_welcome_body">VoiceLock lets you lock your phone instantly just by speaking a secret phrase — even while someone else is holding it. Everything runs on-device. VoiceLock never requests the INTERNET permission, so it is physically incapable of sending your voice, your passcode, or anything else off this phone. You can verify that yourself by inspecting the APK.</string>
+    <string name="onboarding_get_started">Get started</string>
+
+    <!-- Onboarding: Mic -->
+    <string name="onboarding_mic_title">Microphone access</string>
+    <string name="onboarding_mic_body">VoiceLock needs the microphone to listen for your trigger phrase. Audio is processed in memory only — it is never recorded to disk or sent anywhere.</string>
+    <string name="onboarding_grant_permission">Grant permission</string>
+
+    <!-- Onboarding: Device Admin -->
+    <string name="onboarding_admin_title">Allow VoiceLock to lock the screen</string>
+    <string name="admin_disabled_warning">Device admin disabled — VoiceLock can no longer lock your phone on trigger.</string>
+    <string name="onboarding_admin_body">VoiceLock needs Device Administrator access to lock your screen the instant it hears your trigger phrase.</string>
+    <string name="onboarding_activate_admin">Activate device admin</string>
+
+    <!-- Onboarding: Accessibility -->
+    <string name="onboarding_accessibility_title">Enable the VoiceLock gate</string>
+    <string name="onboarding_accessibility_body">Turn on the VoiceLock accessibility service so the hardened gate appears the instant the phone is unlocked after a trigger. Find \"VoiceLock\" in the list on the next screen and turn it on.</string>
+    <string name="onboarding_open_accessibility_settings">Open accessibility settings</string>
+
+    <!-- Onboarding: Battery -->
+    <string name="onboarding_battery_title">Exempt VoiceLock from battery optimization</string>
+    <string name="onboarding_battery_body">Some phones aggressively kill background listeners to save battery. Exempting VoiceLock keeps it listening reliably. If your phone maker has an extra \"auto-start\" or \"protected app\" toggle (common on Samsung, Xiaomi, and OnePlus), enable that too — see the README for manufacturer-specific steps.</string>
+    <string name="onboarding_request_exemption">Request exemption</string>
+
+    <!-- Onboarding: Enroll -->
+    <string name="onboarding_enroll_title">Record your trigger phrase</string>
+    <string name="onboarding_enroll_body">Choose a short phrase only you would say, like \"lock lock lock\". Record it a few times so VoiceLock can recognize your voice reliably, then test detection before you arm the app.</string>
+    <string name="onboarding_start_recording">Start recording</string>
+    <string name="onboarding_test_detection">Test detection</string>
+    <string name="onboarding_recording_sample">Sample %1$d of %2$d</string>
+
+    <!-- Onboarding: Credential -->
+    <string name="onboarding_credential_title">Set your VoiceLock passcode</string>
+    <string name="onboarding_credential_body">This is a second, separate passcode. Even someone who knows your phone\'s regular unlock PIN cannot get past the VoiceLock gate without it. Choose 4–8 digits.</string>
+    <string name="onboarding_credential_confirm">Confirm passcode</string>
+    <string name="onboarding_credential_mismatch">Passcodes don\'t match. Try again.</string>
+    <string name="onboarding_recovery_question_title">Recovery question (optional)</string>
+    <string name="onboarding_recovery_question_body">If you ever forget your VoiceLock passcode, this can help you recover it. You can also always disable third-party apps by booting into Safe Mode — see the README.</string>
+
+    <!-- Onboarding: Arm -->
+    <string name="onboarding_arm_title">You\'re all set</string>
+    <string name="onboarding_arm_body">Arm VoiceLock to start listening for your trigger phrase.</string>
+    <string name="onboarding_arm_now">Arm VoiceLock</string>
+
+    <!-- Home -->
+    <string name="home_title">VoiceLock</string>
+    <string name="home_status_armed">Listening</string>
+    <string name="home_status_disarmed">Not listening</string>
+    <string name="home_toggle_arm">Arm</string>
+    <string name="home_toggle_disarm">Disarm</string>
+    <string name="home_lock_now">Lock now</string>
+    <string name="home_settings">Settings</string>
+    <string name="home_setup_incomplete">Finish setup to arm VoiceLock</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_sensitivity">Detection sensitivity</string>
+    <string name="settings_sensitivity_body">Higher sensitivity catches your phrase more reliably but may trigger on similar-sounding words.</string>
+    <string name="settings_change_phrase">Re-record trigger phrase</string>
+    <string name="settings_change_passcode">Change VoiceLock passcode</string>
+    <string name="settings_auto_start">Start listening on boot</string>
+    <string name="settings_battery_exemption">Battery optimization exemption</string>
+    <string name="settings_accessibility_status">Accessibility service status</string>
+    <string name="settings_post_unlock_cooldown">Pause listening briefly after a successful unlock</string>
+    <string name="settings_about">About &amp; privacy</string>
+    <string name="settings_recovery">Recovery options</string>
+
+    <!-- Gate -->
+    <string name="gate_title">VoiceLock</string>
+    <string name="gate_enter_passcode">Enter your VoiceLock passcode</string>
+    <string name="gate_wrong_passcode">Incorrect passcode</string>
+    <string name="gate_cooldown">Too many attempts. Try again in %1$d s.</string>
+    <string name="gate_unlock">Unlock</string>
+
+    <!-- Common -->
+    <string name="action_next">Next</string>
+    <string name="action_back">Back</string>
+    <string name="action_skip">Skip</string>
+    <string name="action_done">Done</string>
+    <string name="action_cancel">Cancel</string>
+</resources>

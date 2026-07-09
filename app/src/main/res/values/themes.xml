@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.VoiceLock" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/voicelock_status_bar</item>
+        <item name="android:windowBackground">@color/voicelock_background</item>
+        <item name="android:navigationBarColor">@color/voicelock_status_bar</item>
+    </style>
+
+    <!-- Kiosk gate: no transitions, no wallpaper peeking through. -->
+    <style name="Theme.VoiceLock.Gate">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowBackground">@color/voicelock_background_dark</item>
+    </style>
+</resources>
